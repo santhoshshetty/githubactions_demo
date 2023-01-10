@@ -4,7 +4,6 @@ jobs:
  Selenium_Test_Job:
  name: Selenium Test Job
  runs-on: ubuntu-latest
- 
  steps:
-   - run: echo "This is running inside a ${{ runner.os }} server in Github
+   - run: echo "This is running inside a ${{ runner.os }} server in Github"
    
