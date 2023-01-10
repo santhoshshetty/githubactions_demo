@@ -23,7 +23,7 @@ jobs:
      - name: Execite during failure
        if: ${{ failure() }}
        run: echo "One of the step seems failed"
-     - name: Rnun Selenium Test
+     - name: Run Selenium Test
        if: ${{ env.SELENIUM_DRIVER == 'RemoteWebDriver' }}
        run: echo "Running test in selenium grid setup"
        
