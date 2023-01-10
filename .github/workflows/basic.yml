@@ -19,7 +19,7 @@ jobs:
        shell: pwsh
        
  Selenium_UAT_Job:
-   if{{ always() }}
+  if{{ always() }}
    name: Selenium UAT Job
    runs-on: ubuntu-latest
    needs: Selenium_Test_Job
