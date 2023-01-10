@@ -1,0 +1,2 @@
+mkdir ishaandir
+ls -l
