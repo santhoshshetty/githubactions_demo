@@ -9,6 +9,7 @@ jobs:
      
    steps:
      - run: echo "This is running inside a ${{ runner.os }} server in Github"
+     - run: echo "This build is triggered by ${{ github.repository_owner }}"
      - name: Checkout source code
        uses: actions/checkout@v3.3.0
      - run: echo "This repository is ${{ github.repository }}.."
