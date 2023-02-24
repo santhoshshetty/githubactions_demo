@@ -1,5 +1,5 @@
 name: Selenium Test Workflow
-on: push
+on: workflow_dispatch
 jobs:
  Selenium_Test_Job:
    name: Selenium Test Job
