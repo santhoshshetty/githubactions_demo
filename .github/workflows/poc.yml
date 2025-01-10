@@ -9,9 +9,6 @@ on:
         description: "Select the Environment:"
         required: true
         type: environment
-        options:
-        - DEV
-        - INT
 
 jobs:
   build:
