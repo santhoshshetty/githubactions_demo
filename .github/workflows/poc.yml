@@ -6,9 +6,12 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: "Select the Environment:"
+        description: 'Choose environment (INT, UAT)'
         required: true
-        type: environment
+        default: 'UAT'
+        options:
+          - INT
+          - UAT
 
 jobs:
   build:
