@@ -4,6 +4,14 @@ on:
     branches: [ "main" ]
 
   workflow_dispatch:
+    inputs:
+      environment:
+        description: "Select the Environment:"
+        required: true
+        type: environment
+        options:
+        - DEV
+        - INT
 
 jobs:
   build:
