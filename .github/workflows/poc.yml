@@ -16,8 +16,13 @@ jobs:
     environment: ${{ inputs.environment }}
     steps:
       - name: Run the test
+        env: 
+          TIMEOUT: ${{ vars.TIMEOUT }}
+          URL: ${{ vars.URL }}
         run: |
           echo "Hello Test: ${{ inputs.environment }}"
           echo "Key is: ${{ secrets.KEY }}
           echo "Secret is: ${{ secrets.SECRET }}
+          echo "TIMEOUT: $TIMEOUT"
+          echo "URL: $URL"
   
