@@ -13,8 +13,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
     steps:
       - name: Run the test
         run: |
-          echo "Hello Test"
+          echo "Hello Test: ${{ secrets.KEY }}"
   
