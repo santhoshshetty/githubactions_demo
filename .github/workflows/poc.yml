@@ -18,4 +18,6 @@ jobs:
       - name: Run the test
         run: |
           echo "Hello Test: ${{ inputs.environment }}"
+          echo "Key is: $${{ secrets.KEY }}
+          echo "Secret is: $${{ secrets.SECRET }}
   
