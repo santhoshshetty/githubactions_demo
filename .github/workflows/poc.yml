@@ -1,7 +1,7 @@
 name: POC on Environments
 on:
   push: 
-    branches: ["main"]
+    branches: [ "main" ]
 
   workflow_dispatch:
 
